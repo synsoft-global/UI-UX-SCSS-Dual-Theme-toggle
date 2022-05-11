@@ -20,36 +20,7 @@
 "components/cards",
 "components/forms",
 "components/popup";
-// 6. Artist all pages
-@import "../artists/components/all-album/album";
-@import "../artists/components/profile/profile";
-@import "../artists/components/create-album/createalbum";
-@import "../artists/components/notifications/notification";
-@import "../artists/components/reports/reports";
-@import "../../src/utils/musicPlay/musicplayer";
-@import "../artists/components/Settings/settings";
-@import "../artists/components/sidebar/sidebar";
-@import "../artists/components/shared-song-details/shared-song-detail";
-@import "../artists/components/Artist-subscription/artistsubscription";
-// 7. Subscriber all pages
-@import "../subscribers/components/MyPlayList/playlist";
-@import "../subscribers/components/register/onboarding";
-@import "../subscribers/components/profile/profile";
-@import "../subscribers/components/settings/settings";
-@import "../subscribers/components/artist-details/artist-detail";
-@import "../subscribers/components/Subscriptions/subscriber";
-@import "../subscribers/components/Payments/payment";
-@import "../subscribers/components/my-songs/my-songs.scss";
-//8. Admin all pages
-@import "../admin/components/admin-login/admin-login.scss";
-@import "../admin/components/artist-management/artsit-management.scss";
-@import "../admin/components/admin-sidebar/sidebar.scss";
-// @import "../admin//components/admin-profile/admin-profile.scss";
-@import "../admin/components/subscriber-management/subscriber_mgt.scss";
-@import "../admin/components/commission-slabs/commission-slabs.scss";
-@import "../admin/components/subscription-plans/subscription-plan.scss";
-@import "../admin/components/subscriber-details/subscriber-detail.scss";
-@import "../admin/components/songs-played/songs-played.scss";
+
 
  .MuiAutocomplete-popper{
      ul{
