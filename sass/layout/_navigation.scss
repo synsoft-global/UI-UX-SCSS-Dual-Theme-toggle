@@ -1,0 +1,15 @@
+.logo-box {
+    height: 110px;
+    width: 110px;
+    margin: 0 auto;
+}
+.icon-Container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.child-menu{
+    padding-left: 20px;
+}

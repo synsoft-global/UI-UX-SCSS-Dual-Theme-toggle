@@ -1,0 +1,259 @@
+//Artist
+body {
+    .logo {
+        display: flex;
+        padding: 10px 20px;
+        justify-content: center;
+        .artist-logo {
+            background: url('../../assets/images/header_purple_logo.svg') no-repeat;
+            width: 148px;
+            height: 72px;
+            background-size: 100%;
+            background-position: center;
+        }
+    }
+    .MuiDrawer-paper {
+        box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.16);
+        -webkit-box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.16);
+    }
+    header {
+        &.artistheader {
+            background-color: $primary-color;
+            padding: 6px 0px;
+            .t-bg {
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+        .user-profile {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            border: 1px solid $color-white;
+            overflow: hidden;
+            padding: 0px;
+            background-color: $color-white;
+            &:hover {
+                background-color: #fff;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .MuiIconButton-label {
+                height: 100%;
+            }
+        }
+    }
+    .ul-list {
+        margin-top: 20px;
+        .MuiListItem-button {
+            padding: 8px 0px;
+            margin-bottom: 2px;
+            font-size: $para-text;
+            font-family: $primary-font-light;
+            border-right: 5px solid transparent;
+            &.active {
+                background-color: rgba(11, 9, 110, 0.15);
+                color: $primary-color;
+                border-right: 5px solid $primary-color;
+                .MuiListItemIcon-root {
+                    color: $primary-color;
+                }
+            }
+            &:hover {
+                background-color: rgba(11, 9, 110, 0.15);
+                color: $primary-color;
+                border-right: 5px solid $primary-color;
+                .MuiListItemIcon-root {
+                    color: $primary-color;
+                }
+            }
+        }
+        .MuiListItemIcon-root {
+            justify-content: center;
+            color: $color-black;
+        }
+        .MuiListItemText-root {
+            font-size: $para-text;
+            font-family: $primary-font-light;
+            span {
+                font-size: $para-text;
+                font-family: $primary-font-light;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        .shadow-box {
+            .album-list {
+                .album-name {
+                    h2 {
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        .shadow-box {
+            .album-list {
+                padding-bottom: 20px;
+                border-bottom: 1px solid #ccc;
+                .d-flex {
+                    flex-direction: column;
+                }
+                .album-action {
+                    margin-top: 20px;
+                }
+            }
+        }
+        .artistheader {
+            .MuiToolbar-regular {
+                .makeStyles-menuButton-4 {
+                    margin-right: 0px;
+                }
+                li.MuiMenuItem-root.t-bg {
+                    width: 50px;
+                    padding: 0 0px !important;
+                    .MuiFormControlLabel-root {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+                .mobile-csss .upgrade-btn {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+//subscriber
+body {
+    .profile-menu {
+        .MuiMenu-paper {
+            top: 75px !important;
+            ul {
+                padding: 0px;
+                li {
+                    margin: 10px 0px;
+                    font-size: $font16;
+                    font-family: $primary-font-light;
+                    &:hover {
+                        background-color: rgba(107, 60, 152, 0.1);
+                    }
+                    &:active {
+                        background-color: rgba(107, 60, 152, 0.1);
+                    }
+                    &:last-child {
+                        margin: 5px 0px;
+                    }
+                    svg {
+                        color: $primary-color;
+                        font-size: 21px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .main-header {
+        background-color: $color-white;
+        color: $color-grayscale;
+        box-shadow: 6px 0px 11px rgba(0, 0, 0, 0.3);
+        // position: relative;
+        .home-icon {
+            display: inline-block;
+            font-size: 33px;
+            margin: 0px 5px 0px 20px;
+            color: $color-grayscale;
+        }
+        .inner-con {
+            min-height: 75px;
+        }
+        .desktopmenu-css {
+            li {
+                &:hover {
+                    background-color: transparent;
+                    color: $primary-color;
+                }
+            }
+            button {
+                &:hover {
+                    svg {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        .MuiListItem-gutters {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .logo-container {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 0px;
+            .subs-logo-header {
+                background: url('../../assets/images/header_purple_logo.svg') no-repeat;
+                width: 148px;
+                height: 72px;
+                background-size: 100%;
+                background-position: center;
+            }
+            .subs-mobile-logo {
+                background: url('../../assets/images/purplemobile.svg') no-repeat;
+                width: 50px;
+                height: 50px;
+                background-size: 100%;
+                margin-right: 20px;
+                background-position: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        .maxheight {
+            height: calc(100vh - 60px) !important;
+        }
+        .main-header {
+            .inner-con {
+                min-height: 60px;
+            }
+            .logo-container {
+                img {
+                    max-width: 100px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        .main-header {
+            .inner-con {
+                min-height: 60px;
+            }
+            .logo-container {
+                img {
+                    max-width: 50px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

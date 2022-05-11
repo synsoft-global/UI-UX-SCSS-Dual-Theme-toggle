@@ -1,0 +1,285 @@
+/**
+ * Basic typography style for copy text
+ */
+
+body {
+    color: $color-black;
+    font: normal 125% / 1.4 $primary-font-regular !important;
+    position: relative;
+    // min-height: 100vh;
+    // height: 100vh;
+    min-height: calc(100vh - 76px);
+    &.playBar {
+        overflow: hidden;
+    }
+}
+
+
+/* First Paragraph that is larger than rest of content */
+
+.lead {
+    font-size: 125%;
+    font-style: italic;
+}
+
+h1,
+.h1 {
+    @include heading;
+    /* Mobile, Tablet, Desktop Font Settings */
+    @include font-size(34px, 36px, 40px);
+    @include line-height(40px, 42px, 46px);
+    @include margin(0 0 15px, 0 0 20px, 0 0 20px);
+}
+
+h2,
+.h2 {
+    @include heading2;
+    /* Mobile, Tablet, Desktop Font Settings */
+    @include font-size(30px, 30px, 45px);
+    @include line-height(40px, 48px, 48px);
+    @include margin(0 0 40px, 0 0 50px, 0 0 50px);
+}
+
+h3,
+.h3 {
+    @include heading;
+    @include font-size(24px, 30px, 30px);
+    @include line-height(36px, 42px, 48px);
+    @include margin(0 0 30px, 0 0 50px, 0 0 50px);
+}
+
+h4,
+.h4 {
+    @include heading;
+    @include font-size(20px, 20px, 20px);
+    @include line-height(24px, 30px, 30px);
+    @include margin(0 0 10px, 0 0 20px, 0 0 20px);
+}
+
+h5,
+.h5 {
+    @include heading;
+    @include font-size(16px, 18px, 18px);
+    @include line-height(24px, 24px, 24px);
+    @include margin(0 0 10px, 0 0 10px, 0 0 15px);
+}
+
+h6,
+.h6 {
+    @include heading;
+    @include font-size(16px, 16px, 16px);
+    @include line-height(24px, 24px, 24px);
+    @include margin(0 0 10px, 0 0 10px, 0 0 10px);
+    &.h6-small {
+        @include font-size(10px, 14px, 14px);
+        @include line-height(18px, 24px, 24px);
+    }
+}
+
+p {
+    text-align: left;
+    @include font-size(16px, 18px, 18px);
+    @include line-height(24px, 30px, 30px);
+    @include margin(0 0 15px, 0 0 20px, 0 0 25px);
+    &.font-small {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+a {
+    // @include font-size(18px, 18px, 18px);
+    // @include line-height(24px, 24px, 24px);
+}
+
+li {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+button,
+.button {
+    font-family: $primary-font-regular;
+    @include font-size(18px, 18px, 18px);
+    @include line-height(24px, 24px, 24px);
+}
+
+input,
+select,
+textarea,
+.font-lead {
+    font-family: $primary-font-regular;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.select {
+    &__selected,
+    &__items {
+        font-family: $primary-font-regular;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+
+/**
+* Animations
+**/
+
+h1.in-view {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.delete-link {
+    font-size: 14px;
+    line-height: 48px;
+}
+
+blockquote,
+.blockquote {
+    text-align: left;
+    @include font-size(24px, 30px, 30px);
+    @include line-height(36px, 48px, 48px);
+    color: $color-black;
+    margin: 0;
+}
+
+.label-warning {
+    background: $color-black;
+    border: 2px solid $color-black;
+    border-radius: 10px;
+    padding: 8px 13px 8px 51px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 0 0 20px;
+    @include mq($until: tablet) {
+        margin: 0 0 10px;
+    }
+    img {
+        position: absolute;
+        left: 13px;
+        top: 45%;
+        transform: translateY(-50%);
+        max-width: 40px;
+        @include mq($until: tablet) {
+            max-width: 32px;
+        }
+    }
+    h4 {
+        margin: 0 0 0 16px;
+        @include font-size(14px, 20px, 20px);
+        @include line-height(20px, 28px, 28px);
+        @include mq($until: tablet) {
+            margin: 0;
+        }
+    }
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show-block {
+    display: block !important;
+}
+
+.show-inline-block {
+    display: inline-block !important;
+}
+
+.show-flex {
+    display: flex !important;
+}
+
+body {
+    h1 {
+        &.heading-T {
+            text-transform: uppercase;
+        }
+    }
+    .heading-T {
+        font-size: $font22;
+        line-height: 30px;
+        font-family: $primary-font-regular;
+        font-weight: 300;
+        letter-spacing: 0.04rem;
+    }
+    .page-heading {
+        font-size: $title-text;
+        line-height: 24px;
+        font-family: $primary-font-semi-bold;
+        font-weight: 500;
+    }
+    .title-text {
+        font-size: $font16;
+        line-height: 20px;
+        font-family: $primary-font-light;
+        font-weight: 300;
+        // color: $secondary-color-black;
+    }
+    .subtitle-text {
+        font-size: $font18;
+        line-height: 24px;
+        font-family: $primary-font-light;
+        font-weight: 300;
+        letter-spacing: 0.04rem;
+    }
+    .detail-text {
+        font-size: $font16;
+        line-height: 26px;
+        font-family: $primary-font-light;
+        font-weight: 400;
+        color: $color-grayscale;
+    }
+    .para-text {
+        font-size: $para-text;
+        line-height: 24px;
+        font-family: $primary-font-light;
+        font-weight: 500;
+        padding: 0px;
+        .MuiLink-underlineHover {
+            font-weight: 600;
+        }
+    }
+    .sub-para {
+        font-size: $para-f14;
+        line-height: 18px;
+        text-transform: capitalize;
+        font-weight: 300;
+        font-family: $primary-font-light;
+    }
+    .small-text {
+        font-size: $small-text;
+        line-height: 20px;
+        text-transform: capitalize;
+        font-weight: 300;
+        font-family: $primary-font-light;
+    }
+    .footer-pages {
+        .subtitle-text {
+            text-transform: capitalize;
+            color: $color-black;
+            font-weight: 900;
+            letter-spacing: 0.04rem;
+        }
+    }
+    .subscriber-main {
+        .footer-pages {
+            .heading-T {
+                font-weight: 600;
+                line-height: 32px;
+                margin-bottom: 20px;
+                letter-spacing: 0.04rem;
+            }
+        }
+    }
+}

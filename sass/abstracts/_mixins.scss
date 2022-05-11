@@ -1,0 +1,214 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+/// Event wrapper
+@mixin on-event($self: false) {
+    @if $self {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+    @else {
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+}
+
+// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+    #{$context} & {
+        @content;
+    }
+}
+
+@mixin font-size($mobile, $tablet, $desktop) {
+    font-size: #{$desktop};
+    @include mq($until: desktop) {
+        font-size: #{$tablet};
+    }
+    @include mq($until: tablet) {
+        font-size: #{$mobile};
+    }
+}
+
+@mixin letter-spacing($mobile, $tablet, $desktop) {
+    letter-spacing: #{$desktop};
+    @include mq($until: desktop) {
+        letter-spacing: #{$tablet};
+    }
+    @include mq($until: mobileLandscape) {
+        letter-spacing: #{$mobile};
+    }
+}
+
+@mixin line-height($mobile, $tablet, $desktop) {
+    line-height: #{$desktop};
+    @include mq($until: desktop) {
+        line-height: #{$tablet};
+    }
+    @include mq($until: tablet) {
+        line-height: #{$mobile};
+    }
+}
+
+@mixin margin-bottom($mobile, $tablet, $desktop) {
+    margin-bottom: #{$desktop};
+    @include mq($until: desktop) {
+        margin-bottom: #{$tablet};
+    }
+    @include mq($until: tablet) {
+        margin-bottom: #{$mobile};
+    }
+}
+
+@mixin margin($mobile, $tablet, $desktop) {
+    margin: #{$desktop};
+    @include mq($until: desktopLarge) {
+        margin: #{$tablet};
+    }
+    @include mq($until: tablet) {
+        margin: #{$mobile};
+    }
+}
+
+@mixin height($mobile, $tablet, $desktop) {
+    height: #{$desktop};
+    @include mq($until: desktopLarge) {
+        height: #{$tablet};
+    }
+    @include mq($until: tablet) {
+        height: #{$mobile};
+    }
+}
+
+// Mixin for image aspect ratio issue 
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    width: 100%;
+    padding-top: $height / $width * 100%;
+    >*:first-child {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+/* Mixin to write Placeholder scss  */
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin d-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin align-items {
+    align-items: center;
+}
+
+@mixin justify-content {
+    justify-content: center;
+}
+
+@mixin fade-show {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+@mixin circle($width, $height) {
+    width: $width;
+    height: $height;
+    border-radius: 100%;
+    position: relative;
+    background-color: $color-white;
+    display: inline-block;
+    overflow: hidden;
+}
+
+@mixin square($width, $height) {
+    height: $height;
+    width: $width;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    background-color: $color-white;
+}
+
+@mixin imgbasic($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+    object-position: top;
+}
+
+@mixin imgcover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@mixin playicon($width, $height) {
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 100%;
+    height: $height;
+    width: $width;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-color: transparent;
+    opacity: 0;
+}
+
+@mixin colorbox($color:#51a9a8) {
+    height: 100px;
+    background: $color;
+    width: 100%;
+}
+
+@mixin heading {
+    font-family: $primary-font-regular;
+    font-weight: 500;
+}
+
+@mixin heading2 {
+    font-family: $primary-font-regular;
+    font-weight: 600;
+}

@@ -1,0 +1,241 @@
+// All project related buttons code written here
+// ------------------------------------------------------------------
+body {
+    .primary-btn {
+        background-color: $primary-color;
+        color: $color-white;
+        font-size: $para-text;
+        font-family: $primary-font-light;
+        border: 2px solid $primary-color;
+        text-transform: uppercase;
+        border-radius: 25px;
+        padding: 5px 15px;
+        min-width: 138px;
+        &.font14 {
+            font-size: 14px;
+        }
+    }
+    .primary-outline-btn {
+        background-color: transparent;
+        color: $primary-color;
+        font-size: $para-text;
+        font-family: $primary-font-light;
+        text-transform: uppercase;
+        border-radius: 25px;
+        border: 2px solid $primary-color;
+        min-width: 138px;
+        padding: 5px 15px;
+        &.font14 {
+            font-size: 14px;
+        }
+        &.fb-btn {
+            color: $color-black;
+            font-size: $font16;
+            display: inline-flex;
+            padding: 10px 20px;
+            text-transform: capitalize;
+            cursor: pointer;
+            &:hover {
+                background-color: transparent;
+                color: $color-black;
+            }
+            svg {
+                color: #4267B2;
+                margin-right: 8px;
+            }
+        }
+        &.gmail-btn {
+            color: $color-black !important;
+            font-size: $para-text !important;
+            display: inline-flex !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border: 2px solid #6B3C98 !important;
+            border-radius: 25px !important;
+            font-family: $primary-font-light !important;
+            padding: 10px 20px !important;
+            text-transform: capitalize;
+            justify-content: center;
+            min-width: 240px;
+            cursor: pointer;
+            div {
+                padding: 0px !important;
+                border-radius: 0px !important;
+                display: inline-flex;
+            }
+            span {
+                padding: 0px !important;
+                font-weight: 300 !important;
+            }
+            svg {
+                color: #DB4437;
+                padding: 0px !important;
+                margin-right: 8px;
+            }
+        }
+        &:hover {
+            background-color: $primary-color;
+            border: 2px solid $primary-color;
+            color: $color-white;
+        }
+    }
+    & .btn {
+        background-color: transparent;
+        color: $primary-color;
+        font-size: $para-text;
+        font-family: $primary-font-light;
+        text-transform: uppercase;
+        border-radius: 25px;
+        border: 2px solid $primary-color;
+        padding: 4px 20px;
+        line-height: 24px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            background-color: $primary-color;
+            color: $color-white;
+            border: 2px solid $primary-color;
+            box-shadow: 0 0 10px 0 rgba(160, 160, 160, 0.3);
+        }
+    }
+    .secondary-btn {
+        background-color: $color-white;
+        color: $primary-color;
+        font-size: $para-text;
+        font-family: $primary-font-light;
+        text-transform: uppercase;
+        border-radius: 25px;
+        min-width: 138px;
+        padding: 5px 15px;
+        &.font14 {
+            font-size: 14px;
+        }
+    }
+    .secondary-outline-btn {
+        background-color: transparent;
+        color: $color-white;
+        font-size: $para-text;
+        font-family: $primary-font-light;
+        text-transform: uppercase;
+        border-radius: 25px;
+        border: 2px solid $color-white;
+        min-width: 138px;
+        padding: 5px 15px;
+        &.configure-payout:hover {
+            background-color: transparent;
+        }
+        &.font14 {
+            font-size: 14px;
+        }
+        &:hover {
+            background-color: $color-white;
+            border: 2px solid $color-white;
+            color: $primary-color;
+        }
+    }
+    .primary-button-red {
+        background-color: $primary-color-red;
+        color: $color-white;
+        font-size: $para-text;
+        font-family: $primary-font-light;
+        text-transform: uppercase;
+        border-radius: 25px;
+        border: 2px solid $primary-color-red;
+        min-width: 138px;
+        padding: 5px 15px;
+        &.font14 {
+            font-size: 14px;
+        }
+        &:hover {
+            background-color: $primary-color-red;
+            border: 2px solid $primary-color-red;
+        }
+    }
+    .primary-button-outlinered {
+        background-color: transparent;
+        color: $primary-color-red;
+        font-size: $para-text;
+        font-family: $primary-font-light;
+        text-transform: uppercase;
+        border-radius: 25px;
+        border: 2px solid $primary-color-red;
+        min-width: 138px;
+        padding: 5px 15px;
+        &.font14 {
+            font-size: 14px;
+        }
+        &:hover {
+            background-color: $primary-color-red;
+            border: 2px solid $primary-color-red;
+            color: $color-white;
+        }
+    }
+    & .yellow-solid-btn {
+        background-color: $secondary-yellow;
+        border: 2px solid $secondary-yellow;
+        color: $color-white;
+        &:hover {
+            background-color: $secondary-yellow;
+            border: 2px solid $secondary-yellow;
+        }
+    }
+    & .yellow-outline-btn {
+        background-color: transparent;
+        border: 2px solid $secondary-yellow;
+        color: $secondary-yellow;
+        &:hover {
+            background-color: transparent;
+            border: 2px solid $secondary-yellow;
+            color: $secondary-yellow;
+        }
+    }
+    //artist file code here
+    .primary-outline-red {
+        background-color: transparent;
+        color: $primary-color-red;
+        font-size: $para-text;
+        font-family: $primary-font-light;
+        text-transform: uppercase;
+        border-radius: 25px;
+        border: 2px solid $primary-color-red;
+        min-width: 138px;
+        padding: 5px 15px;
+        &.font14 {
+            font-size: 14px;
+        }
+        &:hover {
+            background-color: $primary-color-red;
+            border: 2px solid $primary-color-red;
+            color: $color-white;
+        }
+    }
+    .cancel-disable {
+        background-color: $more-grey;
+        border: 2px solid $greytext;
+        // cursor: not-allowed;
+    }
+    .btn-link {
+        background-color: $primary-color-white;
+        color: $primary-darkpurple-color;
+        border: 1px solid $primary-darkpurple-color;
+        padding: 4px 15px;
+        border-radius: 5px;
+        &:hover {
+            background-color: $primary-darkpurple-color;
+            color: $primary-color-white;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    // body {
+    // .primary-outline-btn {
+    //   &.fb-btn {
+    //     font-size: $small-text;
+    //   }
+    //   &.gmail-btn {
+    //     font-size: $small-text;
+    //   }
+    // }
+    // }
+}

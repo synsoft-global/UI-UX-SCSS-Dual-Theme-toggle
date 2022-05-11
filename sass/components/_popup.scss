@@ -1,0 +1,170 @@
+// Playlist Popup CSS
+
+.playlist {
+  .MuiDialog-paperWidthSm {
+    max-width: 600px;
+    width: 90%;
+  }
+
+  .MuiDialogActions-root {
+    justify-content: center;
+  }
+}
+
+.share-song-modal {
+  .MuiDialog-paperWidthSm {
+    max-width: 560px;
+    width: 90%;
+  }
+}
+
+.addnewsong-modal {
+  .MuiDialog-paperWidthSm {
+    max-width: 460px;
+    width: 90%;
+  }
+}
+
+// Playlist delete and edit Popup CSS
+.playlist-delete,
+.playlist-edit {
+  .MuiDialogActions-root {
+    justify-content: center;
+  }
+  .MuiPaper-root {
+    max-width: 400px;
+    width: 100%;
+  }
+  button {
+    &.primary-outline-btn {
+      min-width: 105px;
+      padding: 2px 0px;
+    }
+
+    &.primary-button-outlinered {
+      min-width: 105px;
+      padding: 2px 0px;
+    }
+  }
+}
+
+// Logout Popup CSS
+.logout-popup {
+  button {
+    min-width: 105px !important;
+  }
+}
+
+.logout-popup {
+  &.nowidth{
+    button {
+      min-width: auto !important;
+    }
+  }
+
+}
+.payment-success-popup {
+  .MuiDialogActions-root {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .MuiPaper-root {
+    max-width: 580px;
+    width: 100%;
+    padding: 20px 0px;
+    .payment-deatil-con {
+      padding: 20px 0px;
+    }
+
+    .success-icon {
+      img {
+        width: 100%;
+        max-width: 195px;
+      }
+    }
+  }
+}
+
+// addplaylist Popup CSS
+.addplaylist-popup {
+  .MuiDialogActions-root {
+    justify-content: center;
+  }
+
+  .MuiPaper-root {
+    max-width: 500px;
+    width: 100%;
+
+    ul {
+      padding: 0px 0px;
+      max-height: 400px;
+      overflow-y: auto;
+
+      .MuiListItem-root {
+        &:hover {
+          background-color: rgba(107, 60, 152, 0.2);
+        }
+
+        &.active {
+          background-color: rgba(107, 60, 152, 0.2);
+        }
+        // border-bottom: 1px solid $color-border;
+        .MuiListItemText-root {
+          color: $primary-color-grey;
+        }
+        padding: 20px 20px;
+        &:last-child {
+          border-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+// verified Popup CSS
+.verified-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .paper-modal {
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
+    background: rgb(235, 215, 254);
+    border-radius: 15px;
+    text-align: center;
+    padding: 50px 30px;
+    svg {
+      color: $primary-color;
+      font-size: 90px;
+    }
+    h2 {
+      margin-bottom: 5px;
+      font-size: $heading-text;
+      color: $primary-color;
+      line-height: 28px;
+    }
+    p {
+      margin-bottom: 0px;
+      font-size: $para-text;
+      line-height: 18px;
+      color: $color-grey;
+      max-width: 275px;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+.popup-loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 0%);
+}

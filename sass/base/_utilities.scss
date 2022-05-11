@@ -1,0 +1,179 @@
+.success-text {
+    color: green;
+}
+
+.danger-color {
+    color: red;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.center-box {
+    justify-content: center;
+}
+
+body {
+    .p-0 {
+        padding: 0px;
+    }
+    .pt-0 {
+        padding-top: 0px;
+    }
+    .pb-0 {
+        padding-bottom: 0px !important;
+    }
+    .p-20 {
+        padding: 20px;
+    }
+    .pr-20 {
+        padding-right: 20px;
+    }
+    .mt-5 {
+        margin-top: 5px;
+    }
+    .mt-10 {
+        margin-top: 10px;
+    }
+    .mt-20 {
+        margin-top: 20px;
+    }
+    .mt-30 {
+        margin-top: 30px;
+    }
+    .mt-50 {
+        margin-top: 50px;
+    }
+    .mb-50 {
+        margin-bottom: 50px;
+    }
+    .mr-35 {
+        margin-right: 35px;
+    }
+    .mr-5 {
+        margin-right: 5px;
+    }
+    .mr-15 {
+        margin-right: 15px;
+    }
+    .ml-5 {
+        margin-left: 5px;
+    }
+    .ml-15 {
+        margin-left: 15px;
+    }
+    .mb-5 {
+        margin-bottom: 5px;
+    }
+    .mb-10 {
+        margin-bottom: 10px !important;
+    }
+    .mb-15 {
+        margin-bottom: 15px;
+    }
+    .mb-20 {
+        margin-bottom: 20px;
+    }
+    .mb-30 {
+        margin-bottom: 30px;
+    }
+    .twolinelength {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        line-height: 24px;
+        min-height: 24px;
+    }
+    .MuiDialog-paper {
+        border-radius: 12px;
+        // width: 320px;
+    }
+    .dialog-title {
+        border-bottom: 1px solid #dedede;
+        padding-bottom: 15px;
+    }
+    .dialog-small {
+        .MuiPaper-root.MuiDialog-paper {
+            width: 318px;
+        }
+    }
+    .section {
+        a {
+            color: $primary-darkpurple-color;
+            // color: #4b0f85;
+            font-weight: 500;
+            &:hover {
+                text-decoration: underline;
+                opacity: 1;
+            }
+        }
+    }
+    //   Slick Slider CSS
+    .slick-slider {
+        & .slick-track {
+            padding-top: 10px;
+        }
+        & .slick-dots {
+            display: none !important;
+        }
+        & .slick-arrow {
+            background: url('../../assets/images/arrow.png') no-repeat center center;
+            width: 18px;
+            height: 27px;
+            &.slick-next {
+                &.slick-disabled {
+                    opacity: 0.5;
+                }
+                transform: translate(0,
+                -50%) rotate(180deg) !important;
+                &::before {
+                    font-size: 0px;
+                }
+            }
+            &.slick-prev {
+                &.slick-disabled {
+                    opacity: 0.5;
+                }
+                &::before {
+                    font-size: 0px;
+                }
+            }
+        }
+        & .slick-list {
+            padding-bottom: 8px;
+            .slick-slide {
+                text-align: center;
+                padding: 0 15px;
+            }
+        }
+    }
+    .section {
+        // &__artists{
+        // }
+        &_albums,
+        &_songs,
+        &_genere {
+            .slick-slider {
+                & .slick-track {
+                    // code for safari
+                    @media not all and (min-resolution: .001dpcm) {
+                        @supports (-webkit-appearance: none) {
+                            height: 205px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

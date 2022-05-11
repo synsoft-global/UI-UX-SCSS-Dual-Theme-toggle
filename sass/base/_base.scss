@@ -1,0 +1,212 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+
+html {
+    box-sizing: border-box;
+    margin-top: 0 !important;
+    // overflow-y: scroll;
+    background-color: $primary-color-white;
+    scroll-behavior: smooth;
+}
+
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/**
+ * Body Styles
+ */
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+/**
+ * Sets Page to grow to fill body, forcing footer to the bottom
+ */
+
+.page {
+    flex-grow: 1;
+}
+
+.page-fade {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.page-fade-show {
+    opacity: 1;
+}
+
+
+/* Basic styles for links */
+
+a {
+    color: $color-black;
+    text-decoration: none;
+    @include on-event {
+        text-decoration: underline;
+    }
+}
+
+
+/**
+ * Basic styles for lists
+ */
+
+body {
+    .text-left {
+        text-align: left;
+        // text-align: left;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .text-white {
+        color: $color-white;
+    }
+    .text-divider {
+        margin: 30px 0px;
+    }
+    .d-flex {
+        display: flex;
+    }
+    .align-items {
+        align-items: center;
+    }
+    .justify-content {
+        justify-content: center;
+    }
+    .spacing-evenly {
+        justify-content: space-evenly;
+    }
+    .item-new-grid {
+        flex-grow: 0;
+        max-width: $item-new-grid;
+        flex-basis: $item-new-grid;
+        //   padding: 0px 15px;
+    }
+}
+
+a {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        padding-bottom: 10px;
+    }
+}
+
+ol {
+    padding: 0;
+}
+
+.MuiFormControl-root,
+.MuiFormLabel-root,
+.MuiInputBase-input,
+.MuiFormHelperText-root,
+.MuiButton-root,
+.MuiMenuItem-root,
+.MuiStepLabel-label {
+    font-family: $primary-font-light !important;
+}
+
+
+/*
+  Basic styles for img
+ */
+
+img,
+.img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    &--full-width {
+        width: 100%;
+    }
+}
+
+ol {
+    li {
+        list-style: decimal;
+        list-style-position: inside;
+        display: inline-block;
+    }
+}
+
+.breadcrumb {
+    ol {
+        li {
+            color: $greytext;
+            line-height: normal;
+            p {
+                font-size: $small-text;
+                color: $color-black;
+            }
+            a {
+                font-size: $small-text;
+                color: $greytext;
+                &:hover {
+                    text-decoration: none;
+                }
+                &.active-link {
+                    color: $color-black;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        .item-new-grid {
+            max-width: $col-4-width;
+            flex-basis: $col-4-width;
+        }
+    }
+}
+
+@media screen and (max-width: 979px) {
+    body {
+        .item-new-grid {
+            max-width: $col-4-width;
+            flex-basis: $col-4-width;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        .item-new-grid {
+            max-width: $col-12-width;
+            flex-basis: $col-12-width;
+        }
+    }
+}

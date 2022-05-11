@@ -1,0 +1,180 @@
+body {
+    .top-footer-con {
+        background: url("../../assets/images/footer.png") no-repeat;
+        width: 100%;
+        background-size: cover;
+        padding: 20px 0px;
+        .max-width415 {
+            max-width: 415px;
+            width: 100%;
+        }
+        .para-text {
+            color: $color-white;
+        }
+        ul {
+            width: 100%;
+            &.contact-detail {
+                li {
+                    color: $color-white;
+                    display: flex;
+                    padding: 0px 0px 15px;
+                    font-family: $primary-font-light;
+                    font-weight: 300;
+                    font-size: $font16;
+                    svg {
+                        color: $color-white;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            &.social-icon {
+                li {
+                    display: inline-block;
+                    padding-right: 28px;
+                    &:last-child {
+                        padding-right: 0px;
+                    }
+                }
+            }
+            li {
+                a {
+                    color: $color-white;
+                    font-family: $primary-font-light;
+                    font-weight: 300;
+                    font-size: $font16;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .bottom-footer-con {
+        background-color: $color-black;
+        color: $color-white;
+        text-align: center;
+        padding: 10px 0px;
+        p {
+            margin-bottom: 0px;
+            text-align: center;
+            font-family: $primary-font-thin;
+            font-weight: 100;
+            font-size: $font16;
+        }
+    }
+    footer {
+        &.artist-footer {
+            // position: relative;
+            bottom: 0;
+        }
+        .artistfooter {
+            width: 100%;
+            background-color: $color-black;
+            color: $color-white;
+            padding: 12px 0px;
+            text-align: center;
+            font-size: $para-text;
+            font-family: $primary-font-thin;
+            position: static;
+            bottom: 0;
+            z-index: 9;
+        }
+    }
+}
+
+@media screen and (min-width: 959px) {
+    body {
+        footer {
+            &.artist-footer {
+                width: calc(100% - 280px);
+                margin-left: 280px;
+                padding: 0px 15px;
+                position: static;
+            }
+           
+        }
+    }
+}
+@media screen and (max-width: 959px) {
+    body {
+                footer {
+                    &.artist-footer {
+                        position: fixed;
+                        bottom: 0;
+                        z-index: 99;
+                        width: 100%;
+                        left: 0;
+                    }
+                   
+                }
+            }
+        }
+
+@media screen  and (max-width: 1024px) {
+    body {
+        height: 100vh;
+        footer {
+            &.artist-footer {
+                // width: 100%;
+                position: fixed;
+                bottom: 0;
+                z-index: 99;
+            }
+            .artistfooter {
+                width: 100%;
+                background-color: $color-black;
+                color: $color-white;
+                padding: 12px 0px;
+                text-align: center;
+                font-size: $para-text;
+                font-family: $primary-font-thin;
+                position: unset;
+                bottom: 0;
+                z-index: 9;
+            }
+        }
+        #root main.main-class {
+            // padding-bottom: 80px;
+            height: 100vh;
+        }
+    }
+}
+
+@media screen and (max-width: 979px) {
+    body {
+        .top-footer-con {
+            .max-width415 {
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        .top-footer-con {
+            ul {
+                &.contact-detail {
+                    li {
+                        font-size: $f13;
+                    }
+                }
+                li {
+                    a {
+                        font-size: $f13;
+                    }
+                }
+            }
+            .para-text {
+                font-size: $f13;
+                line-height: 22px;
+            }
+        }
+        .bottom-footer-con {
+            p {
+                font-size: $f13;
+            }
+        }
+    }
+}

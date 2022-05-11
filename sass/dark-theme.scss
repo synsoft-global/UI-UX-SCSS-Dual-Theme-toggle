@@ -1,0 +1,595 @@
+// Dark theme CSS starts here
+body {
+    &.dark {
+        $body: #212121;
+        $dark-bg: #131313;
+        $text-color: #b4b4b4;
+        $border-color: #646464;
+        $color-white: #ffffff;
+        background-color: $dark-bg;
+        color: $text-color;
+        .popup {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .MuiDrawer-paper {
+            background-color: $body;
+            color: $color-white;
+        }
+        .footer-pages {
+            .subtitle-text {
+                color: $color-white;
+            }
+        }
+        .profile-box {
+            .gender-con {
+                .title-text {
+                    color: $text-color;
+                }
+            }
+        }
+        .steps-cards {
+            background-color: $dark-bg;
+            box-shadow: 3px 5px 9px rgba(255, 255, 255, 0.1);
+        }
+        .purple-box {
+            background-color: $body;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .MusicClose-Bution {
+            svg {
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+        .audio-bottom-fixed {
+            background: linear-gradient(-180deg, rgba(107, 60, 152, 1) 0%, rgba(33, 33, 33, 1) 45%);
+            .music-controls-con {
+                a {
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        .artist-player,
+        .player-bottom {
+            background-color: $dark-bg;
+            .right-side-controls {
+                a {
+                    svg {
+                        &:hover {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+            .music-controls-con {
+                a {
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        //artist
+        .title {
+            h1 {
+                border-color: $color-white;
+            }
+        }
+        .playlist-con-area {
+            .avatar-con {
+                .avatar-desc {
+                    a {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+        .para-text {
+            color: $text-color;
+        }
+        .table {
+            .MuiTableCell-head {
+                color: $color-white;
+            }
+        }
+        .logo {
+            .artist-logo {
+                background: url('../assets/images/header_white_logo.svg') no-repeat;
+                width: 148px;
+                height: 72px;
+                background-size: 100%;
+                background-position: center;
+            }
+        }
+        .close-icon {
+            svg {
+                color: $color-white;
+            }
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        .MuiButton-outlined.Mui-disabled {
+            border-color: rgba(255, 255, 255, 0.3);
+            color: rgba(255, 255, 255, 0.3);
+        }
+        .rhap_container {
+            background-color: $dark-bg !important;
+            color: $text-color;
+        }
+        .addnewsong-modal {
+            .MuiDialog-paper {
+                background-color: $body !important;
+                color: $text-color;
+                .primary-outline-btn {
+                    color: $color-white;
+                    border-color: $color-white;
+                }
+                .MuiInputBase-root {
+                    &::before {
+                        border-color: $text-color !important;
+                    }
+                }
+                .upload-song-con {
+                    h1 {
+                        color: $color-white;
+                    }
+                }
+                label {
+                    color: $color-white;
+                    &.mui-focused {
+                        color: $color-white;
+                    }
+                }
+                input {
+                    color: $color-white !important;
+                }
+            }
+        }
+        .shadow-box {
+            .MuiSwitch-track {
+                background-color: #6a6a6a;
+            }
+        }
+        .main-class,
+        .artist-footer {
+            background-color: $body !important;
+            color: $text-color;
+        }
+        .MuiMenu-paper {
+            background-color: $body !important;
+            color: $text-color !important;
+        }
+        .accordion-1 {
+            .summary {
+                .MuiAccordionSummary-expandIcon {
+                    color: $color-white;
+                }
+            }
+        }
+        .shadow-box,
+        .profile-box,
+        .MuiDrawer-paperAnchorDockedLeft {
+            background-color: $dark-bg !important;
+            color: $text-color !important;
+            .MuiDivider-root {
+                background-color: $text-color;
+                opacity: 0.4;
+            }
+            .primary-outline-btn {
+                color: $color-white;
+                border-color: $color-white;
+            }
+            .upload-song-con {
+                color: $color-white !important;
+                p {
+                    color: $color-white;
+                    // color: $color-white;
+                }
+            }
+            .select-wdth {
+                .MuiSelect-select,
+                svg {
+                    color: $text-color !important;
+                }
+            }
+            .MuiInputBase-root {
+                &::before {
+                    border-color: $text-color !important;
+                }
+            }
+            label {
+                color: $color-white;
+                &.mui-focused {
+                    color: $color-white;
+                }
+            }
+            input {
+                color: $color-white !important;
+            }
+            textarea {
+                color: $color-white !important;
+            }
+            .breadcrumb {
+                ol {
+                    li {
+                        color: $color-white;
+                        a,
+                        p {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+            .edit,
+            .modal-btn {
+                color: $text-color !important;
+            }
+            .page-heading {
+                color: $color-white !important;
+            }
+            .notification-con {
+                h2 {
+                    &.dark-text {
+                        color: $color-white;
+                    }
+                }
+            }
+            .create-btn {
+                color: $color-white !important;
+            }
+            .profile-detail {
+                .MuiTypography-colorPrimary {
+                    &.edit {
+                        color: $text-color !important;
+                    }
+                }
+                .MuiIconButton-label {
+                    color: $text-color !important;
+                }
+                .MuiInput-underline {
+                    &::before {
+                        border-color: $text-color !important;
+                    }
+                }
+                svg {
+                    &.purple-icon {
+                        margin-right: 8px;
+                        color: $color-white;
+                    }
+                }
+                label {
+                    color: $color-white;
+                    &.mui-focused {
+                        color: $color-white;
+                    }
+                }
+                input {
+                    color: $color-white !important;
+                }
+                textarea {
+                    color: $color-white !important;
+                }
+            }
+            h2 {
+                &.title-text {
+                    &.dark-text {
+                        color: $text-color !important;
+                    }
+                }
+            }
+            h1 {
+                color: $text-color !important;
+                border-color: $color-white !important;
+            }
+            .edit {
+                svg {
+                    color: #fff;
+                }
+            }
+        }
+        .ul-list {
+            .MuiListItem-button {
+                &.active {
+                    background-color: $primary-color;
+                    color: $color-white;
+                    border-right: 5px solid $color-white;
+                    .MuiListItemIcon-root {
+                        color: $color-white;
+                    }
+                }
+                &:hover {
+                    background-color: $primary-color;
+                    color: $color-white;
+                    border-right: 5px solid $color-white;
+                    .MuiListItemIcon-root {
+                        color: $color-white;
+                    }
+                }
+            }
+            .MuiListItemIcon-root {
+                color: $color-black;
+            }
+        }
+        .ul-list {
+            .MuiListItemIcon-root {
+                color: $color-white;
+            }
+        }
+        .paper-modal {
+            h6 {
+                color: $text-color;
+            }
+        }
+        .steps-card {
+            background-color: $body;
+            .configure-payout,
+            p {
+                color: $text-color;
+            }
+        }
+        .steps-con {
+            background-color: transparent;
+            .MuiStepLabel-iconContainer {
+                svg {
+                    color: rgba(255, 255, 255, 0.3);
+                    &.MuiStepIcon-active,
+                    &.MuiStepIcon-completed {
+                        color: $primary-color;
+                    }
+                }
+            }
+            .MuiStepLabel-root {
+                .MuiStepLabel-label {
+                    color: $text-color;
+                }
+            }
+        }
+        //subscriber
+        .detail-text,
+        .sort-btn,
+        .title-text,
+        .rhap_time {
+            color: $text-color;
+        }
+        .list-css {
+            .avatar-desc {
+                a {
+                    color: $text-color;
+                }
+            }
+        }
+        //   Slick Slider CSS
+        .slick-slider {
+            & .slick-arrow {
+                background: url('../assets/images/darkarrow.png') no-repeat center center;
+                width: 18px;
+                height: 27px;
+            }
+        }
+        .MuiInputAdornment-root {
+            svg {
+                color: $text-color;
+            }
+        }
+        .seeall-txt {
+            a {
+                color: $text-color;
+            }
+        }
+        .listing-link {
+            color: $text-color;
+        }
+        .notification-con {
+            h2 {
+                &.dark-text {
+                    color: $text-color !important;
+                }
+            }
+        }
+        .class-dark {
+            color: $text-color;
+            svg {
+                color: $text-color;
+            }
+        }
+        footer {
+            .top-footer-con {
+                p {
+                    color: $color-white;
+                }
+            }
+        }
+        .heading-T {
+            color: $color-white;
+        }
+        .icon-holder-con {
+            border-color: $text-color;
+            svg {
+                color: $color-white;
+            }
+        }
+        table {
+            thead {
+                th {
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+                    color: $text-color;
+                    background-color: $body;
+                }
+            }
+            td {
+                color: $text-color;
+                background-color: $body;
+            }
+        }
+        .payment-table {
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            table {
+                thead {
+                    th {
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+                        color: $text-color;
+                    }
+                }
+                td {
+                    color: $text-color;
+                }
+            }
+        }
+        .subscriber-card {
+            background-color: $dark-bg;
+            box-shadow: 3px 5px 9px rgba(255, 255, 255, 0.1);
+            h2,
+            p {
+                color: $text-color;
+            }
+            .MuiCardContent-root {
+                ul {
+                    li {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+        .logo-container {
+            .subs-logo-header {
+                background: url('../assets/images/header_white_logo.svg') no-repeat;
+                width: 148px;
+                height: 72px;
+                background-size: 100%;
+                background-position: center;
+            }
+            .subs-mobile-logo {
+                background: url('../assets/images/whitemobile.svg') no-repeat;
+                width: 50px;
+                height: 50px;
+                background-size: 100%;
+                margin-right: 20px;
+                background-position: center;
+            }
+        }
+        .MuiDialog-paper {
+            background-color: $body;
+            h2,
+            p {
+                color: $color-white;
+                &.Mui-error {
+                    color: #f44336;
+                }
+            }
+        }
+        .right-side {
+            background-color: $dark-bg;
+        }
+        .profile-shadowcon {
+            background-color: $body;
+            hr {
+                background-color: rgba(255, 255, 255, 0.12);
+            }
+        }
+        .breadcrumb {
+            ol {
+                li {
+                    color: $color-white;
+                    line-height: normal;
+                    a,
+                    p {
+                        font-size: $small-text;
+                        color: $color-white;
+                        // color: $color-white;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .logout-popup {
+            hr {
+                &.MuiDivider-root {
+                    background-color: rgba($color-white, 0.2);
+                }
+            }
+            .MuiPaper-root {
+                background-color: $body;
+                h2 {
+                    color: $color-white;
+                }
+                p {
+                    color: $text-color;
+                }
+            }
+        }
+        .main-header {
+            svg {
+                color: $text-color;
+            }
+        }
+        .section,
+        body,
+        .main-header {
+            background-color: $dark-bg;
+            color: $text-color;
+        }
+        .desc-text {
+            color: $color-white;
+        }
+        .select-wdth {
+            .MuiSelect-select,
+            svg {
+                color: $text-color !important;
+            }
+        }
+        .MuiInputBase-root {
+            &::before {
+                border-color: $text-color !important;
+            }
+        }
+        label {
+            color: $color-white !important;
+            &.mui-focused {
+                color: $color-white !important;
+            }
+        }
+        input {
+            color: $color-white !important;
+        }
+        textarea {
+            color: $color-white !important;
+        }
+        .primary-outline-btn {
+            border-color: $color-white;
+            color: $text-color;
+            &.fb-btn {
+                border-color: $color-white;
+                color: $text-color;
+                &:hover {
+                    border-color: $color-white;
+                    color: $text-color;
+                }
+            }
+            &.gmail-btn {
+                border-color: $color-white !important;
+                color: $text-color !important;
+                &:hover {
+                    border-color: $color-white;
+                    color: $text-color;
+                }
+            }
+        }
+        .main-header {
+            box-shadow: 4px 3px 6px rgba(255, 255, 255, 0.16);
+            -webkit-box-shadow: 4px 3px 6px rgba(255, 255, 255, 0.16);
+            -moz-box-shadow: 4px 3px 6px rgba(255, 255, 255, 0.16);
+        }
+        .MuiSwitch-colorPrimary.Mui-checked+.MuiSwitch-track {
+            background-color: #b4b4b4 !important;
+        }
+        .border-bottom {
+            border-bottom: 1px solid $border-color;
+        }
+    }
+}
